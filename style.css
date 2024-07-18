@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    font-family: 'Barlow Semi Condensed';
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    background-color: #EDF2F8;
+    align-items: center;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    row-gap: 20px;
+    column-gap: 26px;
+    margin: 20px 0;
+    width: 80vw;
+}
+
+.cardone {
+    background-color: #7542CA;
+    grid-column: span 2;
+    border-radius: 10px;
+    padding: 20px;
+    background-image: url(bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position-x: 80%;
+}
+
+.cardsix {
+    background-color: #18202D;
+    grid-column: span 2;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.cardtwo {
+    background-color: #49556B;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.cardfour {
+    background-color: var(--whiteColor);
+    grid-row: span 2;
+    box-shadow: 7px 7px 13px -10px rgba(0, 0, 0, 0.75);
+    border-radius: 10px;
+    padding: 20px 30px;
+
+}
+
+.cardfive {
+    background-color: var(--whiteColor);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.a {
+    display: flex;
+    flex-direction: column;
+}
+
+.detailslight {
+    font-size: 13px;
+    line-height: 23px;
+    font-weight: 500;
+    color: #DDE1EA;
+
+}
+
+.e {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.title {
+    color: #EDF1FA;
+    margin-bottom: 10px;
+    line-height: 25px;
+    font-size: 20px;
+}
+
+img {
+    width: 25px;
+    height: 25px;
+    border-radius: 50px;
+    border: white 2px solid;
+
+}
+
+.detailsdark {
+    color: #505967;
+    font-size: 13px;
+    line-height: 23px;
+    font-weight: 500;
+}
+
+.y {
+    color: #B0B1B5;
+    font-size: 12px;
+}
+
+.t {
+    color: #515966;
+}
+
+.o {
+    color: white;
+}
+
+.tit {
+    margin-bottom: 10px;
+    line-height: 25px;
+    font-size: 20px;
+}
+
+.cardfour .detailsdark {
+    line-height: 20px;
+}
+
+@media screen and (max-width:1000px) {
+    .main {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .cardone,
+    .cardsix {
+        grid-column: span 1;
+    }
+
+    .main {
+        width: auto;
+        padding: 0 20px;
+    }
+
+    .cardone,
+    .cardsix,
+    .cardtwo,
+    .cardfour,
+    .cardfive {
+        padding: 25px;
+    }
+
+}
+
+@media screen and (max-width: 1000px) and (min-width: 500px) {
+    .main {
+        width: 80vw;
+    }
+}
+
+@media screen and (max-width: 1200px) and (min-width: 1000px) {
+    .main {
+        width: 90vw;
+    }
+}
